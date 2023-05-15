@@ -261,7 +261,7 @@ func WithProperty(property string) userSearchF {
 func (s *UserService) FindWithContext(ctx context.Context, property string, tweaks ...userSearchF) ([]User, *Response, error) {
 	search := []userSearchParam{
 		{
-			name:  "query",
+			name:  "username",
 			value: property,
 		},
 	}
